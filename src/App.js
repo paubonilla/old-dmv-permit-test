@@ -5,6 +5,7 @@ function App() {
   return (
     <div>
       this is your dmv practice test
+      <button>click here to proceed</button>
     </div>
   );
 }
