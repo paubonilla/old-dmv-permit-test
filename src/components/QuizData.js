@@ -81,33 +81,33 @@ export const QuizData = [
     },
     {
         id: 13,
-        question: ``,
-        options: [``],
-        answer: ``
+        question: `You are driving in a city street and see an emergency vehicle with flashing lights behind you. What do you do?`,
+        options: [`Drive to the right edge of the road and slow down`, `Drive to the right edge of the road and stop`, `Stay in you lane, slow down, and let it pass`],
+        answer: `Drive to the right edge of the road and stop`
     },
     {
         id: 14,
-        question: ``,
-        options: [``],
-        answer: ``
+        question: `Large trucks turning right onto a street with two lanes in each direction...`,
+        options: [`May complete their turn in either the left or right lane`, `Often have to use part of the left lane to complete the turn`, `Must stay in the right lane at all times`],
+        answer: `Often have to use part of the left lane to complete the turn`
     },
     {
         id: 15,
-        question: ``,
-        options: [``],
-        answer: ``
+        question: `You are driving on a one-way street. You may turn left onto another one-way street:`,
+        options: [`Only if a sign permits the turn`, `If traffic on the street is moving to the left`, `If traffic on the street is moving to the right`],
+        answer: `If traffic on the street is moving to the left`
     },
     {
         id: 16,
-        question: ``,
-        options: [``],
-        answer: ``
+        question: `You want to pass a bicyclist riding on the edge of your lane, You:`,
+        options: [`Must Honk your horn before passing the bicyclist`, `Must not squeeze past the bicyclist`, `Must not pass the bicyclist for any reason`],
+        answer: `Must not squeeze past the bicyclist`
     },
     {
         id: 17,
-        question: ``,
-        options: [``],
-        answer: ``
+        question: `You should not start across an intersection if you know you will block the intersection when the light turns red:`,
+        options: [`Under any circumstances`, `Unless you entered the intersection on a yellow light`, `Unless you entered the intersection on a green light`],
+        answer: `Under any circumstances`
     },
     {
         id: 18,
