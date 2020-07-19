@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dmv-test/static/css/main.756de27d.chunk.css",
+    "main.js": "/dmv-test/static/js/main.6055b850.chunk.js",
+    "main.js.map": "/dmv-test/static/js/main.6055b850.chunk.js.map",
+    "runtime-main.js": "/dmv-test/static/js/runtime-main.1481d302.js",
+    "runtime-main.js.map": "/dmv-test/static/js/runtime-main.1481d302.js.map",
+    "static/js/2.d483316f.chunk.js": "/dmv-test/static/js/2.d483316f.chunk.js",
+    "static/js/2.d483316f.chunk.js.map": "/dmv-test/static/js/2.d483316f.chunk.js.map",
+    "index.html": "/dmv-test/index.html",
+    "precache-manifest.e5381d65d06cc2e3858dc228ead9a9c4.js": "/dmv-test/precache-manifest.e5381d65d06cc2e3858dc228ead9a9c4.js",
+    "service-worker.js": "/dmv-test/service-worker.js",
+    "static/css/main.756de27d.chunk.css.map": "/dmv-test/static/css/main.756de27d.chunk.css.map",
+    "static/js/2.d483316f.chunk.js.LICENSE.txt": "/dmv-test/static/js/2.d483316f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1481d302.js",
+    "static/js/2.d483316f.chunk.js",
+    "static/css/main.756de27d.chunk.css",
+    "static/js/main.6055b850.chunk.js"
+  ]
+}
