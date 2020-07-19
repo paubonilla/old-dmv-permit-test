@@ -7,7 +7,7 @@ function App() {
   return (
     <PageWrapper>
       <PageInner>
-        <h1>dmv permit test</h1>
+        <h1>DMV Permit Practice Test</h1>
         <Content>
           <Quiz />
         </Content>
