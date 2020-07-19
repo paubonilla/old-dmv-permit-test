@@ -3,3 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.selected {
+  background: rgb(181, 217, 250);
+}
+
+.options {
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #000;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 50px;
+}
