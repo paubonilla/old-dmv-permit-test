@@ -94,7 +94,7 @@ export default class Quiz extends Component {
             <QuizContentStyle>
                 <QuizWrapper>
                     <h2>{question}</h2>
-                    <span>{`Question ${currentIndex + 1} of ${QuizData.length}`}</span>
+
                     {
                         options.map(option =>
                             <p
@@ -106,7 +106,7 @@ export default class Quiz extends Component {
                             </p>
                         )
                     }
-
+                    <span>{`Question ${currentIndex + 1} of ${QuizData.length}`}</span>
                     {currentIndex < QuizData - 1 &&
                         <button
                             disabled={this.state.disabled}
