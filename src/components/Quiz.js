@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { QuizData } from './QuizData'
-import { QuizContentStyle, QuizWrapper } from '../styled'
+import { QuizContentStyle, QuizWrapper, Result } from '../styled'
 export default class Quiz extends Component {
     constructor(props) {
         super(props)
@@ -76,17 +76,20 @@ export default class Quiz extends Component {
 
         if (quizEnd) {
             return (
-                <div>
+                <Result>
                     <h1>The final score is {this.state.score} points</h1>
-                    <p>The correct answers</p>
+                    <p>Correct Answers</p>
                     <ul>
                         {QuizData.map((item, index) => (
-                            <li className="options"
+                            <li className="results"
                                 key={index}
-                            >{item.answer}</li>
+                            >
+                                <p>{item.question}</p>
+                                <p className="correct-answer">{item.answer}</p>
+                            </li>
                         ))}
                     </ul>
-                </div>
+                </Result>
             )
         }
 
@@ -107,17 +110,19 @@ export default class Quiz extends Component {
                         )
                     }
                     <span>{`Question ${currentIndex + 1} of ${QuizData.length}`}</span>
-                    {currentIndex < QuizData - 1 &&
+                    {
+                        currentIndex < QuizData.length - 1 &&
                         <button
                             disabled={this.state.disabled}
                             onClick={this.nextQuestionHandler}
                         >
                             Next Question
-                        </button>}
+                        </button>
+                    }
                     {
                         currentIndex === QuizData.length - 1 &&
                         <button
-                            onClick={this.state.finishHandler}
+                            onClick={this.finishHandler}
                             disabled={this.state.disabled}
                         >
                             Finish
