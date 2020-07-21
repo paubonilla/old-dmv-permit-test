@@ -10,7 +10,7 @@ export default class Quiz extends Component {
             currentIndex: 0,
             options: [],
             quizEnd: false, // true if it is the last question
-            score: 0,
+            score: 1,
             disabled: true
         }
     }
@@ -77,15 +77,16 @@ export default class Quiz extends Component {
         if (quizEnd) {
             return (
                 <Result>
-                    <h1>The final score is {this.state.score} points</h1>
+                    <h1>Your final score is {this.state.score} point&#40;s&#41;</h1>
                     <p>Correct Answers</p>
                     <ul>
                         {QuizData.map((item, index) => (
                             <li className="results"
                                 key={index}
                             >
-                                <p>{item.question}</p>
-                                <p className="correct-answer">{item.answer}</p>
+                                <p><b>Question:</b> {item.question}</p>
+                                <p><b>Your answer: </b>{userAnswer}</p>
+                                <p className="correct-answer"><b>Correct answer:</b> {item.answer}</p>
                             </li>
                         ))}
                     </ul>
@@ -97,6 +98,7 @@ export default class Quiz extends Component {
             <QuizContentStyle>
                 <QuizWrapper>
                     <h2>{question}</h2>
+                    <span>{`Question ${currentIndex + 1} of ${QuizData.length}`}</span>
 
                     {
                         options.map(option =>
@@ -109,7 +111,6 @@ export default class Quiz extends Component {
                             </p>
                         )
                     }
-                    <span>{`Question ${currentIndex + 1} of ${QuizData.length}`}</span>
                     {
                         currentIndex < QuizData.length - 1 &&
                         <button

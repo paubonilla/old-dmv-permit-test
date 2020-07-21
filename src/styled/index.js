@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const PageWrapper = styled.div`
+  color: #212738;
   position: relative;
   width: 800px;
   @media (max-width: 768px) {
@@ -11,12 +12,14 @@ export const PageWrapper = styled.div`
   }
   height: 100vh;
   display: flex;
+  justify-content: center;
+  padding: 3rem 0;
   margin: 0 auto;
 `
 
 export const PageInner = styled.div`
   position: absolute;
-  padding: 3rem;
+  padding: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -25,6 +28,9 @@ export const PageInner = styled.div`
 `
 
 export const Content = styled.div`
+  background: #e8e8e8;
+  border-radius: 15px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,9 +56,6 @@ export const Result = styled.div`
 
   ul {
     list-style: none;
-    li {
-      margin: 0 10px;
-    }
   }
   
   .results {
@@ -60,10 +63,14 @@ export const Result = styled.div`
     flex-direction: column;
     padding: 1rem;
     height: auto;
-
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 15px 0;
   }
   
   .correct-answer {
-    background-color: lightgreen;
+    /* background-color: lightgreen;
+    padding: 10px;
+    border-radius: 10px; */
   }
 `

@@ -5,6 +5,9 @@ $fontFamily: "Comfortaa", cursive;
   padding: 0;
   box-sizing: border-box;
   font-family: "Sora", sans-serif;
+  &::selection {
+    background-color: rgba(104, 249, 205, 0.603);
+  }
 }
 
 .selected {
