@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { QuizData } from './QuizData'
-import { QuizContentStyle, QuizWrapper, Result } from '../styled'
+import { QuizContentStyle, QuizWrapper, Result, Buttons } from '../styled'
 export default class Quiz extends Component {
     constructor(props) {
         super(props)
@@ -84,9 +84,9 @@ export default class Quiz extends Component {
                             <li className="results"
                                 key={index}
                             >
-                                <p><b>Question:</b> {item.question}</p>
+                                <p><b>Question: </b>{item.question}</p>
                                 <p><b>Your answer: </b>{userAnswer}</p>
-                                <p className="correct-answer"><b>Correct answer:</b> {item.answer}</p>
+                                <p className="correct-answer"><b>Correct answer: </b>{item.answer}</p>
                             </li>
                         ))}
                     </ul>
@@ -111,24 +111,28 @@ export default class Quiz extends Component {
                             </p>
                         )
                     }
-                    {
-                        currentIndex < QuizData.length - 1 &&
-                        <button
-                            disabled={this.state.disabled}
-                            onClick={this.nextQuestionHandler}
-                        >
-                            Next Question
-                        </button>
-                    }
-                    {
-                        currentIndex === QuizData.length - 1 &&
-                        <button
-                            onClick={this.finishHandler}
-                            disabled={this.state.disabled}
-                        >
-                            Finish
-                        </button>
-                    }
+                    <Buttons>
+                        {
+                            currentIndex < QuizData.length - 1 &&
+                            <button
+                                className="button"
+                                disabled={this.state.disabled}
+                                onClick={this.nextQuestionHandler}
+                            >
+                                Next Question
+                            </button>
+                        }
+                        {
+                            currentIndex === QuizData.length - 1 &&
+                            <button
+                                className="button"
+                                onClick={this.finishHandler}
+                                disabled={this.state.disabled}
+                            >
+                                Finish
+                            </button>
+                        }
+                    </Buttons>
                 </QuizWrapper>
             </QuizContentStyle>
         )

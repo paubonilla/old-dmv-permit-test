@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const PageWrapper = styled.div`
   color: #212738;
@@ -49,6 +49,29 @@ export const QuizWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`
+
+export const Buttons = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+
+  .button {
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgb(181, 217, 250);
+    cursor: pointer;
+    /* ${({ primary }) => primary ?
+    css`
+      background: rgb(181, 217, 250);
+    ` :
+    css`
+      background: rgba(104, 249, 205);
+    `} */
+  }
 `
 
 export const Result = styled.div`
