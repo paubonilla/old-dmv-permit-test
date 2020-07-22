@@ -54,13 +54,14 @@ export const QuizWrapper = styled.div`
 export const Buttons = styled.div`
   display: flex;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: center;
 
   .button {
     margin: 1rem 0;
     padding: 0.75rem;
     border: none;
     outline: none;
+    border: 1px solid;
     border-radius: 10px;
     background: rgb(181, 217, 250);
     cursor: pointer;
