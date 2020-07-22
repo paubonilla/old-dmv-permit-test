@@ -2,8 +2,6 @@ import React from 'react'
 import { PageWrapper, PageInner, Content } from './styled'
 import './App.scss'
 import Quiz from './components/Quiz'
-import ClassCounter from './components/ClassCounter'
-import HookCounter from './components/HookCounter'
 
 function App() {
   return (
@@ -13,8 +11,6 @@ function App() {
         <Content>
           <Quiz />
         </Content>
-        <ClassCounter />
-        <HookCounter />
       </PageInner>
     </PageWrapper>
   );
