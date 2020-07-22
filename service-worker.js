@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dmv-permit-test/precache-manifest.f70bceba530f954c1a142790560b3b03.js"
+  "/dmv-permit-test/precache-manifest.3fcab1992b47564facd0073e5e854aa5.js"
 );
 
 self.addEventListener('message', (event) => {
