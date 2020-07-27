@@ -10,7 +10,7 @@ export default class Quiz extends Component {
             currentIndex: 0,
             options: [],
             quizEnd: false, // true if it is the last question
-            score: 1,
+            score: 0,
             disabled: true
         }
     }
